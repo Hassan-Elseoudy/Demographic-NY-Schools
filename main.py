@@ -1,8 +1,4 @@
-from fastapi import FastAPI
+from project import create_app
 
-app = FastAPI()
-
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+app = create_app()
+celery = app.celery_app
