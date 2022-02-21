@@ -4,7 +4,7 @@ from project.database import Base
 
 
 class Grade(Base):
-    __tablename__ = "grades"
+    __tablename__ = "grade"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     dbn = Column(String(128), unique=False, nullable=True)

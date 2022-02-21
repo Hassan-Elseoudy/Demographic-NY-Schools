@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-users_router = APIRouter(
+grades_router = APIRouter(
     prefix="/grades",
 )
 
